@@ -93,19 +93,19 @@ func Em(text string) *Node {
 	return ttag("em", text)
 }
 
-func H1(children ...*Node) *Node {
+func H1(text string) *Node {
 	return ttag("h1", text)
 }
 
-func H2(children ...*Node) *Node {
+func H2(text string) *Node {
 	return ttag("h2", text)
 }
 
-func H3(children ...*Node) *Node {
+func H3(text string) *Node {
 	return ttag("h3", text)
 }
 
-func H4(children ...*Node) *Node {
+func H4(text string) *Node {
 	return ttag("h4", text)
 }
 
