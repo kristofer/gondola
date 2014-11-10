@@ -128,3 +128,13 @@ func Small(text string) *Node {
 func Span(children ...*Node) *Node {
 	return container("span", children)
 }
+
+// lists
+
+func Ul(children ...*Node) *Node {
+	return container("ul", children)
+}
+
+func Li(text string) *Node {
+	return ttag("li", text)
+}
