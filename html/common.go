@@ -93,8 +93,32 @@ func Em(text string) *Node {
 	return ttag("em", text)
 }
 
+func H1(children ...*Node) *Node {
+	return ttag("h1", text)
+}
+
+func H2(children ...*Node) *Node {
+	return ttag("h2", text)
+}
+
+func H3(children ...*Node) *Node {
+	return ttag("h3", text)
+}
+
+func H4(children ...*Node) *Node {
+	return ttag("h4", text)
+}
+
 func P(children ...*Node) *Node {
 	return container("p", children)
+}
+
+func Section(children ...*Node) *Node {
+	return container("section", children)
+}
+
+func Strong(text string) *Node {
+	return ttag("strong", text)
 }
 
 func Small(text string) *Node {
